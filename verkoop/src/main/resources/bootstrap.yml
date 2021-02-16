@@ -1,0 +1,14 @@
+server:
+  port: 8081
+
+# Spring
+spring:
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/proyecto_cuadros?useUnicode=true&autoReconnect=true&useSSL=false&serverTimezone=UTC
+    username: ${MYSQL_USER}
+    password: ${MYSQL_PASSWORD}
+  jpa:
+    hibernate.ddl-auto: update
+    generate-ddl: true
+    show-sql: true

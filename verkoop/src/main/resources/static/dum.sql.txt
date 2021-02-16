@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS proyecto_cuadros.cuadro;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE proyecto_cuadros.cuadro (
+  `id` bigint NOT NULL AUTO_INCREMENT,
+  `descripcion` varchar(2048) NOT NULL,
+  `precio` int(11) NOT NULL,
+  `foto` longtext not null,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=50 DEFAULT CHARSET=latin1;
